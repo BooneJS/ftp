@@ -87,11 +87,13 @@ func DialTimeout(addr string, timeout time.Duration) (*ServerConn, error) {
 		return nil, err
 	}
 
+	/*
 	err = c.feat()
 	if err != nil {
 		c.Quit()
 		return nil, err
 	}
+	*/
 
 	return c, nil
 }
